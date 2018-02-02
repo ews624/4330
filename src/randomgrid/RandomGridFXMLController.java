@@ -101,10 +101,6 @@ public class RandomGridFXMLController  implements Initializable, Startable {
         
        anchorPane.getChildren().clear();
        
-       
-     
-       
-       
       checkerBoard = new Checkerboard(anchorPane.getWidth() ,anchorPane.getHeight(), numRows, numCols);
       // vbox.getChildren().remove(anchorPane);
        anchorPane.getChildren().add(checkerBoard.build());
@@ -167,16 +163,7 @@ public class RandomGridFXMLController  implements Initializable, Startable {
     @FXML
     private void blue(ActionEvent event) {
         
-        colored(Color.SKYBLUE, Color.DARKBLUE);
-       
-        
+        colored(Color.SKYBLUE, Color.DARKBLUE);  
         
     }
-
-    @FXML
-    private void handleColor(ActionEvent event) {
-        
-        
-    }
-    
 }
