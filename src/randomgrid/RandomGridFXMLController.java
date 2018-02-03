@@ -58,9 +58,6 @@ public class RandomGridFXMLController  implements Initializable, Startable {
         this.stage = stage;
         System.out.println(anchorPane.getWidth());
         
-      
-        
-        
         
         checkerBoard = new Checkerboard(anchorPane.getWidth() ,anchorPane.getHeight(), 8, 8);
         
@@ -96,9 +93,6 @@ public class RandomGridFXMLController  implements Initializable, Startable {
     }
     
     private void refresh(int numRows, int numCols){
-        
-       // System.out.println("Refreshed");
-        
        anchorPane.getChildren().clear();
        
       checkerBoard = new Checkerboard(anchorPane.getWidth() ,anchorPane.getHeight(), numRows, numCols);
@@ -113,7 +107,6 @@ public class RandomGridFXMLController  implements Initializable, Startable {
     private void colored(Color lightColor, Color darkColor){
      int numRows =  checkerBoard.getNumCols();
      int numCols =   checkerBoard.getNumRows();
-        
         anchorPane.getChildren().clear();
        checkerBoard = new Checkerboard(anchorPane.getWidth() ,anchorPane.getHeight(), numRows, numCols, lightColor, darkColor);
       // vbox.getChildren().remove(anchorPane);

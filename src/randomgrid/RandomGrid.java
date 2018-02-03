@@ -26,16 +26,10 @@ public class RandomGrid extends Application {
         Parent root =loader.load();
         Startable controller = loader.getController();
 
-
         //RandomGridFXMLController controller =loader.getController();
-        
         //Object oc = (Object)controller;
-       // Initializable ic = (Initializable)controller;
-        
-       
-        
-        
-     //   root = FXMLLoader.load(getClass().getResource("RandomGridFXML.fxml"));
+        //Initializable ic = (Initializable)controller;
+        //root = FXMLLoader.load(getClass().getResource("RandomGridFXML.fxml"));
         
         Scene scene = new Scene(root);
         
